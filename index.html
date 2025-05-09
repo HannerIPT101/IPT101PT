@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero section">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Hannah Cuyno</span></h1>
+      <h2>Front-End Developer and UX/UI Designer</h2>
+      <button onclick="scrollToSection('projects')">See Projects</button>
+      <div class="scroll-down">↓</div>
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  <section id="about" class="section glass">
+    <div class="about-container">
+      <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic">
+      
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m a creative front-end web developer with a passion for building clean, user-friendly interfaces, smooth animations, and interactive designs that enhance user experience. With a background in web development and a strong eye for detail, I enjoy blending aesthetics with functionality to create engaging digital experiences. I'm constantly exploring new design trends and front-end technologies, aiming to grow as a developer and eventually lead projects that push the boundaries of web interaction and visual storytelling.
+        </p>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+      </ul>
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  <section id="projects" class="section projects-bg">
+    <div class="container">
+      <h2>PROJECTS</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Healthy Recipe Page</h3>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Portfolio Website</h3>
+        </div>
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>JavaScript Game</h3>
+        </div>
+        <div class="project-card">
+          <img src="images/project4.jpg" alt="Project 4">
+          <h3>Foodicted Recipedia</h3>
+        </div>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  <section id="contact" class="section contact-bg">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
